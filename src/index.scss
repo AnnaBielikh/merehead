@@ -1,0 +1,69 @@
+section.ant-layout {
+    min-height: 100vh;
+}
+
+.ant-layout-header {
+    background: #f0f2f5;
+    ul {
+        background: #f0f2f5;
+        border-bottom: 0px;
+    }
+}
+
+main {
+    margin: 50px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+button.ant-btn {
+    min-width: 120px;
+}
+
+.alert_wrapper {
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+.ant-alert {
+    position: absolute;
+    top: 30%;
+    z-index: 1000;
+    left: calc(50vw - 150px);
+    width: 300px;
+}
+
+.users_wrapper {
+    min-height: 55vh;
+}
+
+.users {
+    border: 1px solid #f0f2f5;
+    > div:nth-child(2n+1) {
+        background-color: #f0f2f5;
+    }
+}
+
+.user_item {
+    padding: 20px 20px;
+    .icons {
+        text-align: right;
+        span {
+            font-size: 22px;
+            margin: 5px;
+            cursor: pointer;
+            &.edit {
+                color: green;
+            }
+            &.delete {
+                color: red;
+            }
+        }
+    }
+}
+
+.ant-pagination {
+    text-align: center;
+}
